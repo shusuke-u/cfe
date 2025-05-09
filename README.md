@@ -1,4 +1,4 @@
-# Elastic Body Mechanics Numerical Simulation Code
+# Linear Isotropic Elasticity Numerical Simulation Code with CFE method
 
 This project provides numerical simulation code for analyzing the mechanical behavior of linear isotropic elastic bodies using SPH methods. The code is based on the CFE (Central Force Elasticity) method developed in Utsumi et al. (2025, in preparation).
 
@@ -77,7 +77,7 @@ This scripts automatically build the required sources
   - [Tensile Test](docs/examples/tensile_test.md)
   - More examples coming soon...
 
-## Available Projects
+## Sample Projects
 
 1. **Tensile Test** (`project/tensile/`)
    - Uniaxial tensile test simulation
@@ -85,15 +85,14 @@ This scripts automatically build the required sources
    - Configurable boundary conditions and material properties
 
 2. **Linear Analysis** (`project/linear/`)
-   - Linear elastic analysis
-   - Stress-strain relationship analysis
-   - Material property validation
+   - Linear wace propagation
+   - Sound speed calculation of longitude and transverse
+   - Sound speed ratio validation with respect to elastic dynamics
 
 3. **Other Analysis Types**
-   - Biaxial test (`project/biaxial/`)
-   - Torsion test (`project/torsion/`)
-   - Plate analysis (`project/plate/`)
-   - Eigenvalue analysis (`project/eigen_fn/`)
+   - Torsional lod test (`project/torsion/`)
+   - Plate oscillation analysis (`project/plate/`)
+   - Particle system relaxation (`project/relax/`)
 
 ## Output
 
