@@ -1,0 +1,5 @@
+#pragma once
+
+#define USE_VOLUME_BASED_SPH
+#define USE_ORG_PERIODIC_BOUNDARY
+// #define SELF_IMPL_PERIODIC_BOUNDARY

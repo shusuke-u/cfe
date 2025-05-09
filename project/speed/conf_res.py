@@ -1,0 +1,21 @@
+att_coef = 1
+box = [ [ -1, -1, -1 ], [ 2, 2, 2 ] ]
+dis_coef = 0
+distribution = 'Cartesian'
+energy = 1
+index = 0
+internal_energy = 1
+kernel_support_radius = 5
+mass = 9
+mode = 'make'
+n_dim = 2
+n_out = 50
+n_ptcl = 10000
+periodic_boundary = [ True, False, False ]
+rep_coef = 1
+reuse_time = True
+shift = [ 0.01, 0, 0 ]
+speed = 1.30637
+spring_length_limit = 1.5
+time_end = 2
+

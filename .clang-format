@@ -1,0 +1,38 @@
+BasedOnStyle: Google
+SpaceBeforeParens: Never
+IndentWidth: 4
+ColumnLimit: 96
+IndentPPDirectives: AfterHash
+
+SortIncludes: Never
+
+# contraction
+AllowShortBlocksOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: true
+AllowShortLoopsOnASingleLine: true
+AllowShortLambdasOnASingleLine: All
+AllowShortFunctionsOnASingleLine: None
+AllowShortCaseLabelsOnASingleLine: true
+
+# alignment of arguments
+AlignAfterOpenBracket: Align
+
+# space in bracket
+Cpp11BracedListStyle: false
+SpacesInCStyleCastParentheses: false
+SpacesInAngles: false
+SpacesInConditionalStatement: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# Use Allman style for brace placement (opening brace on a new line)
+BreakBeforeBraces: Allman
+
+# Optionally ensure the return type and function name are on separate lines
+AlwaysBreakAfterDefinitionReturnType: true
+
+# Optional: Additional control for specific brace wrapping behaviors
+BraceWrapping:
+  AfterFunction: true # Insert a line break after the function argument parentheses before the opening brace
+
+PointerAlignment: Left

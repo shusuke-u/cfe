@@ -1,0 +1,34 @@
+# Build directories
+build/
+.vscode/
+.venv/
+
+# IDE specific files
+*.code-workspace
+.DS_Store
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.out
+*.app
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.swo
+*~ 
