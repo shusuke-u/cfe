@@ -24,6 +24,7 @@ Makefile
 __pycache__/
 *.py[cod]
 *$py.class
+*.ipynb
 
 # Logs
 *.log
@@ -31,4 +32,4 @@ __pycache__/
 # Temporary files
 *.swp
 *.swo
-*~ 
+*~

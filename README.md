@@ -36,4 +36,4 @@ MIT License
 
 ## Contributing
 
-Pull requests and issue reports are welcome. 
+Pull requests and issue reports are welcome.
