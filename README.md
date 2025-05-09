@@ -1,6 +1,6 @@
 # Elastic Body Mechanics Numerical Simulation Code
 
-This project provides numerical simulation code for analyzing the mechanical behavior of elastic bodies using particle-based methods.
+This project provides numerical simulation code for analyzing the mechanical behavior of elastic bodies using particle-based methods. The code is based on the CFE (Central Force Elasticity) method developed in Utsumi et al. (2025, in preparation).
 
 ## Features
 
@@ -45,7 +45,7 @@ cmake ..
 make
 ```
 
-## Usage
+## Quick Start
 
 1. Move to project directory (e.g., project/tensile)
 2. Configure parameters in the settings file (tensile.py):
@@ -58,12 +58,39 @@ make
 python3 run.py {n_procs}
 ```
 
-   where `{n_procs}` is the number of MPI processes to use
+where `{n_procs}` is the number of MPI processes to use
+This scripts automatically build the required sources
+
 4. Check the results in `runs/{timestamp}/`:
 
 - Deformation data
 - Stress-strain curves
 - Visualization files
+
+## Documentation
+
+- [API Reference](docs/API.md): Detailed API documentation
+- [Examples](docs/examples/): Example implementations and tutorials
+  - [Tensile Test](docs/examples/tensile_test.md)
+  - More examples coming soon...
+
+## Available Projects
+
+1. **Tensile Test** (`project/tensile/`)
+   - Uniaxial tensile test simulation
+   - Calculates Young's modulus and Poisson's ratio
+   - Configurable boundary conditions and material properties
+
+2. **Linear Analysis** (`project/linear/`)
+   - Linear elastic analysis
+   - Stress-strain relationship analysis
+   - Material property validation
+
+3. **Other Analysis Types**
+   - Biaxial test (`project/biaxial/`)
+   - Torsion test (`project/torsion/`)
+   - Plate analysis (`project/plate/`)
+   - Eigenvalue analysis (`project/eigen_fn/`)
 
 ## Output
 
@@ -94,4 +121,12 @@ Pull requests and issue reports are welcome. Please follow these steps:
 ## Citation
 
 If you use this code in your research, please cite:
-[Add citation information here]
+
+```
+@article{utsumi2025cfe,
+  title={Coupled Finite Element Method for Elastic Body Simulation},
+  author={Utsumi, Shusuke and others},
+  journal={in preparation},
+  year={2025}
+}
+```
