@@ -1,22 +1,28 @@
 # Elastic Body Mechanics Numerical Simulation Code
 
-This project provides numerical simulation code for analyzing the mechanical behavior of elastic bodies using particle-based methods. The code is based on the CFE (Central Force Elasticity) method developed in Utsumi et al. (2025, in preparation).
+This project provides numerical simulation code for analyzing the mechanical behavior of linear isotropic elastic bodies using SPH methods. The code is based on the CFE (Central Force Elasticity) method developed in Utsumi et al. (2025, in preparation).
 
 ## Features
 
-- 3D elastic body deformation analysis
-- Tensile test simulation
-- Poisson's ratio calculation
-- Young's modulus calculation
-- Parallel computation support
+- 3D linear isotropic elasticity analysis
+- User friendly APIs
+- Highly readable input and output format
+- Parallel calculation with MPI and OpenMP
+- Various sample simulation codes
+  - Uniaxial tensile test
+  - Linear waves propagation
+  - Torsional test
+  - Plate oscillation
+  - Particle system relaxation
 - Visualization tools for results
 
 ## Requirements
 
-- C++17 or higher
+- C++20 or higher
 - CMake 3.10 or higher
 - Python 3.6 or higher
 - MPI (Message Passing Interface)
+- OpenMP (Open Multi-Processing)
 - FDPS (Framework for Developing Particle Simulator) - <https://github.com/FDPS/FDPS.git>
 
 ## Installation
@@ -25,8 +31,6 @@ This project provides numerical simulation code for analyzing the mechanical beh
 
 ```bash
 git clone https://github.com/FDPS/FDPS.git
-cd FDPS
-./install.sh
 ```
 
 2. Clone this repository:
@@ -36,13 +40,12 @@ git clone [repository-url]
 cd [repository-name]
 ```
 
-3. Build the project:
+1. Build the project (basically not required):
 
 ```bash
 mkdir build
-cd build
-cmake ..
-make
+cmake -S . -B build
+cmake --build build --target [your-target]
 ```
 
 ## Quick Start
@@ -117,16 +120,3 @@ Pull requests and issue reports are welcome. Please follow these steps:
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```
-@article{utsumi2025cfe,
-  title={Coupled Finite Element Method for Elastic Body Simulation},
-  author={Utsumi, Shusuke and others},
-  journal={in preparation},
-  year={2025}
-}
-```
