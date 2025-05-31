@@ -6,7 +6,7 @@ This project provides numerical simulation code for analyzing the mechanical beh
 
 - 3D linear isotropic elasticity analysis
 - User friendly APIs
-- Highly readable input and output format
+- Highly readable I/O format
 - Parallel calculation with MPI and OpenMP
 - Various sample simulation codes
   - Uniaxial tensile test
@@ -36,8 +36,8 @@ git clone https://github.com/FDPS/FDPS.git
 2. Clone this repository:
 
 ```bash
-git clone [repository-url]
-cd [repository-name]
+git clone https://github.com/shusuke-u/cfe.git
+cd cfe
 ```
 
 1. Build the project (basically not required):
@@ -66,9 +66,10 @@ This scripts automatically build the required sources
 
 4. Check the results in `runs/{timestamp}/`:
 
-- Deformation data
-- Stress-strain curves
-- Visualization files
+- Positions
+- Velocities
+- Pressures
+- etc. 
 
 ## Documentation
 
@@ -93,15 +94,6 @@ This scripts automatically build the required sources
    - Torsional lod test (`project/torsion/`)
    - Plate oscillation analysis (`project/plate/`)
    - Particle system relaxation (`project/relax/`)
-
-## Output
-
-The simulation generates the following outputs:
-
-- Deformation data in binary format
-- Stress-strain data in CSV format
-- Visualization files for post-processing
-- Log files with simulation parameters and performance metrics
 
 ## License
 
